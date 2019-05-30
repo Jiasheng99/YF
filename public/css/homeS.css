@@ -1,0 +1,113 @@
+:root{
+    --letra: 'Quicksand', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--letra);
+
+    height: 100%;
+    width: 100%;
+    color: #000;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#head{
+    background-color: gainsboro;
+    height: 75px;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    z-index: 10;
+    overflow: hidden;
+    position: fixed;
+}
+
+#headH img{
+    height: 70px;
+    width: 70px;
+}
+
+#headH{
+    margin-left: 60px;
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+}
+
+#menuH{
+    display: inline-block;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+    float: right;
+    padding-right: 40px;
+}
+
+header a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.col-lg-12{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#content{
+    text-align: center;
+    padding-top: 100px;
+    background-color: #E0F3ED;
+    width: 100%;
+}
+
+.fa-bars{
+    margin-right: 10px;
+}
+
+#sidebar{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: wheat;
+    padding: 50px 10px;
+    display: none;
+    margin-top: 75px;
+}
+
+.fa-times{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+.fa-times:hover{
+    background-color: #f90;
+}
+
+.listaproductos{
+    margin-top: 100px;
+}
+
+table,th,td{
+    font-size: 20px;
+}
+
+a:hover, a{
+    text-decoration: none;
+    color: white;
+}
