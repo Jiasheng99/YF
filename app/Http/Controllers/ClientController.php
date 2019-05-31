@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use App\Client;
 use App\Empresa;
 use App\Producto;
@@ -60,7 +61,7 @@ class ClientController extends Controller
         $telefono = $request->input('telefono');
         $direccion = $request->input('direccion');
         $email = $request->input('email');
-        $password = $request->input('password');
+        $password = Hash::make($request->input('password'));
         $clientes = Client::find($id);
         $clientes->nombre = $nombre;
         $clientes->telefono = $telefono;

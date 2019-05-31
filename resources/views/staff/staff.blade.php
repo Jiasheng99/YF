@@ -94,5 +94,5 @@
 @endsection
 
 @section('js')
-<script src="{{ asset('js/homeC.js') }}" ></script>
+<script src="{{ asset('js/homeS.js') }}" ></script>
 @endsection

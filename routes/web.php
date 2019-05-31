@@ -61,6 +61,8 @@ Route::prefix('empresa')->group(function() {
 
 Route::get('producto/{id}', 'ProductsController@index');
 Route::get('cart', 'ProductsController@cart'); 
+
+
 Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
 Route::patch('update-cart', 'ProductsController@update');
 Route::delete('remove-from-cart', 'ProductsController@remove');

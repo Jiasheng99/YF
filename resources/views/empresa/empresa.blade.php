@@ -7,7 +7,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-            <div class="col-lg-3">
+            <div>
                 <div id="sidebar">
                     <i class="fas fa-times"></i>
                     <ul class="menu">
@@ -20,8 +20,8 @@
                     </ul>    
                 </div>
             </div>
-        <div class="col-lg-9 home">
-            <img src="{{ asset('image/logo.png') }}">
+        <div class="col-lg-12 home">
+            <img src="{{ asset('image/logo.png') }}" id="logo">
         </div>
     </div>
 </div>

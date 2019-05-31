@@ -43,8 +43,8 @@ class EmpresaLoginController extends Controller
     {
         $this->validate($request, [
             'name' => ['required', 'string', 'max:255'],
-            'codEmpresa' => ['required', 'string', 'max:255'],
-            'phone' => ['required', 'string', 'max:255'],
+            'codEmpresa' => ['required', 'integer', 'max:255'],
+            'phone' => ['required', 'integer', 'min:9'],
             'direction' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:empresas'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],

@@ -43,7 +43,7 @@ class EmpresaController extends Controller
         $telefono = $request->input('telefono');
         $direccion = $request->input('direccion');
         $email = $request->input('email');
-        $password = $request->input('password');
+        $password = Hash::make($request->input('password'));
         $empresas = Empresa::find($id);
         $empresas->nombre = $nombre;
         $empresas->codEmpresa = $codEmpresa;
@@ -73,7 +73,7 @@ class EmpresaController extends Controller
         $staffs->nombre = request('nombre');
         $staffs->telefono = request('telefono');
         $staffs->email = request('email');
-        $staffs->worktime = request('worktime');
+        $staffs->worktime = request('worktime').'h';
         $staffs->role = request('role');
         $staffs->password =  Hash::make($request['password']);
         $staffs->id_empresa = $empresas->id;

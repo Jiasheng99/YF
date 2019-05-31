@@ -19,6 +19,7 @@ class ProductsController extends Controller
         return view('cart.products')->withMessage("No element found!");
     }
  
+
     public function cart()
     {
         return view('cart.cart');

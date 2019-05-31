@@ -185,3 +185,13 @@ header a:hover{
 #guardar{
     display: none;
 }
+
+.home{
+    margin-top: 220px;
+    text-align: center;
+}
+
+#logo{
+    width: 280px;
+    height: 300px;
+}

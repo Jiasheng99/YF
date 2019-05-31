@@ -7,11 +7,10 @@
 @endsection 
 
 @section('content')
- 
+ <?php session_start()?>
     <div class="container products">
  
         <div class="row">
- 
         @if(isset($details))
             @foreach($details as $product)
                 <div class="col-xs-18 col-sm-6 col-md-3">
@@ -27,7 +26,6 @@
                 </div>
             @endforeach
         @endif
-
         </div>
  
     </div>

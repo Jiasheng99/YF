@@ -49,7 +49,6 @@
  
         </tbody>
         <tfoot>
-    
         <tr>
             <td><a href="{{ url('../') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Volver</a></td>
             <td colspan="2" class="hidden-xs"></td>
@@ -68,7 +67,7 @@
                 {{ csrf_field() }}
                 <div >
                 	<label>Como pagar: </label><br/>
-					<select  name="targeta">
+					<select id="targeta" name="targeta">
 					  <option id="E"  value ="Efectivo">Efectivo</option>
 					  <option id="V"  value ="Visa">Visa</option>
 					  <option id="M"  value="Mastercard">Mastercard</option>
@@ -87,6 +86,7 @@
 					</select>
                         
                 </div>
+                <div id="ver">
                 <div>
                 	<br/>
                     <label>NumeroTargeta:</label>
@@ -108,6 +108,8 @@
                     <label>NumeroDedetras:</label>
                     <input id="NumeroD" type="text" value="432" name="n5">
                 </div>
+
+                </div> 
                 <input type="hidden" name="total" value="<?php echo $total; ?>" class="form-control" />
                 <p>Total para pagar: <?php echo $total." €"; ?></p>
                 <button type="button" id="CancelarP" class="btn btn-primary"> Cancelar</button>

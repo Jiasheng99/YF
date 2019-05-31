@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="row" style="margin-top:90px">
+    <div class="row" style="margin-top:90px; margin-left:350px;">
 
         <div class="col-md-offset-3 col-md-6">
 			<div class="panel-body" style="padding:30px">
@@ -30,12 +30,12 @@
 					{{ csrf_field() }}
     				<div class="form-group">
     					<label for="nombre">Nombre</label>
-    					<input type="text" name="nombre" id="nombre" class="form-control">
+    					<input type="text" name="nombre" id="nombre" class="form-control" pattern="^[a-zA-Z]{3,}$">
 					</div>
 
 					<div class="form-group">
 						<label for="precio">Precio</label>
-    					<input type="text" name="precio" id="precio" class="form-control">
+    					<input type="text" name="precio" id="precio" class="form-control" pattern="^[1-9][0-9]{,4}$">
 
 					</div>
 					<div class="form-group">

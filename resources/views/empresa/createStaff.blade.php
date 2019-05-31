@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="row" style="margin-top:90px">
+    <div class="row" style="margin-top:90px; margin-left:350px;">
 
         <div class="col-md-offset-3 col-md-6">
 			<div class="panel-body" style="padding:30px">
@@ -30,27 +30,27 @@
                     {{ csrf_field() }}
     				<div class="form-group">
     					<label for="nombre">Nombre</label>
-    					<input type="text" name="nombre" id="nombre" class="form-control">
+    					<input type="text" name="nombre" id="nombre" class="form-control" pattern="^[a-zA-Z]{5,}$">
 					</div>
 
 					<div class="form-group">
                         <label for="telefono">Telefono</label>
-    					<input type="text" name="telefono" id="telefono" class="form-control">
+    					<input type="text" name="telefono" id="telefono" class="form-control" pattern="^[1-9][0-9]{8,}$">
 					</div>
 
 					<div class="form-group">
                         <label for="email">Email</label>
-    					<input type="text" name="email" id="email" class="form-control">
+    					<input type="text" name="email" id="email" class="form-control" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 					</div>
 
 					<div class="form-group">
                         <label for="worktime">Worktime</label>
-    					<input type="text" name="worktime" id="worktime" class="form-control">
+    					<input type="text" name="worktime" id="worktime" class="form-control" pattern="^[1-9]{1,}[0-9]{0,}$">
 					</div>
 
                     <div class="form-group">
                         <label for="password">Password</label>
-    					<input type="text" name="password" id="password" class="form-control">
+    					<input type="text" name="password" id="password" class="form-control" pattern="^[1-9][0-9]{8,}$">
                     </div>
                     
                     <select name="role" id="role">

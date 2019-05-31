@@ -7,7 +7,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-12 col-ms-12">
+        <div class="col-lg-12">
             <div id="sidebar">
                 <i class="fas fa-times"></i>
                 <ul class="menu">
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12 col-ms-12" id="tag">
+        <div class="col-lg-12" id="tag">
             <form action="{{ url('client/verEmpresa') }}" method="POST" role="search">
                 {{ csrf_field() }}
                 <div class="input-group">
