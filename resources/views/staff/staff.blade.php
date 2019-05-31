@@ -53,7 +53,8 @@
                             <td>{{ $pedidos['estado'] }}</td>
                             <td>{{ $pedidos['total'] }} €</td>
                             <td>{{ $pedidos['id_cliente'] }}</td>
-                            <td><a href="{{ url('staff/repartidorEntregar/' . $pedidos['id'] )}}">Entregar</a></td>
+                            <td><a href="{{ url('staff/repartidorEntregar/' . $pedidos['id'] )}}">Entregar</a>/
+                            <a href="{{ url('staff/repartidorAcabado/' . $pedidos['id'] )}}">Acabado</a></td>
                         </tr>
                         @endforeach
                     </tbody>

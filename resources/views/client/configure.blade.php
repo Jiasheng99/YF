@@ -51,7 +51,7 @@
 
                         <div class="form-group">
                             <label for="direccion">Direccion</label>
-                            <input type="text" value="{{$arrayClientes['direccion']}}" name="direccion" id="direccion" class="form-control" pattern="^[a-z]{5,}\s[1-9][0-9]{1,3}$">
+                            <input type="text" value="{{$arrayClientes['direccion']}}" name="direccion" id="direccion" class="form-control">
                         </div>
 
                         <div class="form-group">

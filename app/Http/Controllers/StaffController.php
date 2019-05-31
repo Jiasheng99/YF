@@ -68,4 +68,15 @@ class StaffController extends Controller
         }
         return redirect('staff');
     }
+
+    public function acabado($id)
+    {
+        $pedidos = Pedidos::find($id);
+        if ($pedidos->tipopedido == 'parallevar' and $pedidos->estado == "encamino")
+        {
+            $pedidos->estado = "entregado";
+            $pedidos->save();
+        }
+        return redirect('staff');
+    }
 }

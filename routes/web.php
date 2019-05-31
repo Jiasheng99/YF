@@ -38,6 +38,7 @@ Route::prefix('staff')->group(function() {
     Route::get('/cajeroPagado/{id}', 'StaffController@pagado');
     Route::get('/cajeroPreparado/{id}', 'StaffController@preparado');
     Route::get('/repartidorEntregar/{id}', 'StaffController@entregado');
+    Route::get('/repartidorAcabado/{id}', 'StaffController@acabado');
 });
 
 Route::prefix('empresa')->group(function() {
